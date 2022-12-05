@@ -5,11 +5,7 @@
 
 - clean: ['~']
 
-- shell:
-  - [sh pre-install.sh, Running pre installation script]
-
 - link:
-    ~/.dotfiles: ''
     ~/.gitmessage: gitmessage
     ~/.gitconfig:
     ~/.gitignore_local:
@@ -18,6 +14,10 @@
     ~/.zprofile: .zprofile
     ~/.zshenv: .zshenv
     ~/.zshrc_local_before: .zshrc_local_before
+
+- shell:
+  - [sh pre-install.sh, Running pre installation script]
+
 
 - brewfile:
     - brew/Brewfile

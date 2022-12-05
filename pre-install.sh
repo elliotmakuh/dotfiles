@@ -8,7 +8,6 @@ else
   echo 'Updating homebrew'
   brew update
 fi
-brew tap homebrew/bundle  # Install Homebrew Bundle
 
 # Check if oh-my-zsh is installed
 OMZDIR="$HOME/.oh-my-zsh"
