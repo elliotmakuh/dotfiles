@@ -1,0 +1,5 @@
+brew "pyenv"
+brew "jq"
+brew "cmake"
+brew "protobuf"
+brew "speedtest"

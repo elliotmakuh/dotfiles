@@ -8,10 +8,10 @@
 - link:
     ~/.gitmessage: gitmessage
     ~/.gitconfig:
-    ~/.gitignore_local:
+    ~/.gitconfig_local:
     ~/.gitignore_global:
     ~/.zshrc: .zshrc
-    ~/.zprofile: .zprofile
+    # ~/.zprofile: .zprofile
     ~/.zshenv: .zshenv
     ~/.zshrc_local_before: .zshrc_local_before
 
