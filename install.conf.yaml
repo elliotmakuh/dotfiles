@@ -3,10 +3,12 @@
       create: true
       relink: true
 
+    brewfile:
+      include: ['tap', 'brew', 'cask', 'mas']
+
 - clean: ['~']
 
 - link:
-    ~/.gitmessage: gitmessage
     ~/.gitconfig:
     ~/.gitconfig_local:
     ~/.gitignore_global:
@@ -18,10 +20,9 @@
 - shell:
   - [sh pre-install.sh, Running pre installation script]
 
-
 - brewfile:
     # This accepts the same options as `brew bundle` command:
-    file: brew/Brewfile
+    file: Brewfile
 
 - shell:
   - [sh fonts/install.sh, Installing Powerline fonts]
