@@ -12,6 +12,7 @@
     ~/.zshrc: .zshrc
     ~/.zshenv: .zshenv
     ~/.zshrc_local_before: .zshrc_local_before
+    ~/.zprofile:
     ~/.powerline.json: powerline.json
 
 - shell:
