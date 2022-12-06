@@ -20,7 +20,8 @@
 
 
 - brewfile:
-    - brew/Brewfile
+    # This accepts the same options as `brew bundle` command:
+    file: brew/Brewfile
 
 - shell:
   - [sh fonts/install.sh, Installing Powerline fonts]
