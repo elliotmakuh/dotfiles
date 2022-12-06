@@ -3,9 +3,6 @@
       create: true
       relink: true
 
-    brewfile:
-      include: ['tap', 'brew', 'cask', 'mas']
-
 - clean: ['~']
 
 - link:
@@ -13,16 +10,18 @@
     ~/.gitconfig_local:
     ~/.gitignore_global:
     ~/.zshrc: .zshrc
-    # ~/.zprofile: .zprofile
     ~/.zshenv: .zshenv
     ~/.zshrc_local_before: .zshrc_local_before
+    ~/.powerline.json: powerline.json
 
 - shell:
   - [sh pre-install.sh, Running pre installation script]
 
+- shell:
+  - [git submodule update --init --recursive, Installing submodules]
+
 - brewfile:
-    # This accepts the same options as `brew bundle` command:
-    file: Brewfile
+    - Brewfile
 
 - shell:
   - [sh fonts/install.sh, Installing Powerline fonts]
